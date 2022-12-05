@@ -1,4 +1,5 @@
 import string
+from utils import chunks
 
 
 def part_one():
@@ -12,10 +13,6 @@ def part_one():
 
 
 def part_two():
-    def chunks(lst, n):
-        for i in range(0, len(lst), n):
-            yield lst[i:i + n]
-
     score = 0
     with open("inputs/day_3.txt") as f:
         bags = list(chunks([l.strip() for l in f.readlines()], 3))
