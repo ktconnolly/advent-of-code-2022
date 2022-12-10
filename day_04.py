@@ -4,7 +4,7 @@ pattern = re.compile("(\d+)-(\d+),(\d+)-(\d+)")
 
 
 def get_ranges():
-    with open("inputs/day_4.txt") as f:
+    with open("inputs/day_04.txt") as f:
         for l in f:
             m = pattern.match(l)
             r1 = range(int(m[1]), int(m[2]) + 1)

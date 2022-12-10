@@ -1,5 +1,5 @@
 def solve(n):
-    with open("inputs/day_6.txt") as f:
+    with open("inputs/day_06.txt") as f:
         seq = f.read()
         for i in range(len(seq) - n + 1):
             if len(set(seq[i: i + n])) == n:

@@ -1,5 +1,5 @@
 def get_input():
-    with open("inputs/day_2.txt") as f:
+    with open("inputs/day_02.txt") as f:
         for l in f:
             yield l.split()
 

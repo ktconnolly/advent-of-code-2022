@@ -30,7 +30,7 @@ class Directory:
 
 
 def get_root():
-    with open("inputs/day_7.txt") as f:
+    with open("inputs/day_07.txt") as f:
         lines = [l.strip() for l in f.readlines()]
         root = Directory(name="/")
         curr_dir = root

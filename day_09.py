@@ -14,7 +14,7 @@ DIRECTIONS = {
 
 
 def get_moves():
-    with open("inputs/day_9.txt") as f:
+    with open("inputs/day_09.txt") as f:
         return [(l.split()[0], int(l.split()[1])) for l in f]
 
 

@@ -1,5 +1,5 @@
 def get_trees():
-    with open("inputs/day_8.txt") as f:
+    with open("inputs/day_08.txt") as f:
         return [[int(col) for col in l.strip()] for l in f]
 
 

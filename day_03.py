@@ -4,7 +4,7 @@ from utils import chunks
 
 def part_one():
     score = 0
-    with open("inputs/day_3.txt") as f:
+    with open("inputs/day_03.txt") as f:
         for bag in f:
             h1, h2 = bag[:len(bag) // 2], bag[len(bag) // 2:]
             common = set(h1).intersection(h2)
@@ -14,7 +14,7 @@ def part_one():
 
 def part_two():
     score = 0
-    with open("inputs/day_3.txt") as f:
+    with open("inputs/day_03.txt") as f:
         bags = list(chunks([l.strip() for l in f.readlines()], 3))
         for group in bags:
             common = set(group[0]).intersection(*group)

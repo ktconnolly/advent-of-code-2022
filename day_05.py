@@ -25,7 +25,7 @@ def get_input():
             procedures.append(Procedure(count, stack_from - 1, stack_to - 1))
         return procedures
 
-    with open("inputs/day_5.txt") as f:
+    with open("inputs/day_05.txt") as f:
         starting, procedures = f.read().split("\n\n")
         return get_starting_stacks(starting), get_procedures(procedures)
 
